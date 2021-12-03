@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-(v$%92l#mz)5^md71m*j9%!%0hun@yd_ywr-q@o+@@=vh_3$y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://practiceinfinity1.herokuapp.com/','practiceinfinity1.herokuapp.com']
 
 # Application definition
 
@@ -199,3 +199,6 @@ EMAIL_MAIL_SUBJECT = 'Confirm your Email for Practise Infinity'
 EMAIL_MAIL_HTML = 'mail_body.html'
 EMAIL_MAIL_PLAIN = 'mail_body.txt'
 EMAIL_PAGE_TEMPLATE = 'confirm_template.html'
+#  Add configuration for static files storage using whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
