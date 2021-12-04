@@ -40,7 +40,7 @@ def home(request):
     #company = get_company(request)
     # if company is None:
     #     return HttpResponseRedirect(reverse('customers:login'))
-    return render(request, "index.html")
+    return render(request, "customers/index.html")
 
 
 def register(request):
@@ -88,7 +88,7 @@ def register(request):
     else:
         form = UserForm()
     print(request.user)
-    return render(request, 'register.html', {'form': form, 'company': current_company})
+    return render(request, 'customers/register.html', {'form': form, 'company': current_company})
 
 
 
